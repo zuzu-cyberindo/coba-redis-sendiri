@@ -2,7 +2,6 @@ package com.zuzu.redis.coba_sendiri.coba_redis_sendiri;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cache.annotation.EnableCaching;
 
 @SpringBootApplication
 public class CobaRedisSendiriApplication {

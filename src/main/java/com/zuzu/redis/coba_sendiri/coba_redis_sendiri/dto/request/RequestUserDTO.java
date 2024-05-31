@@ -1,4 +1,4 @@
-package com.zuzu.redis.coba_sendiri.coba_redis_sendiri.dto;
+package com.zuzu.redis.coba_sendiri.coba_redis_sendiri.dto.request;
 
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.NotNull;

@@ -1,7 +1,7 @@
-package com.zuzu.redis.coba_sendiri.coba_redis_sendiri.service;
+package com.zuzu.redis.coba_sendiri.coba_redis_sendiri.service.user;
 
-import com.zuzu.redis.coba_sendiri.coba_redis_sendiri.dto.RequestUserDTO;
-import com.zuzu.redis.coba_sendiri.coba_redis_sendiri.dto.ResponseUserDTO;
+import com.zuzu.redis.coba_sendiri.coba_redis_sendiri.dto.request.RequestUserDTO;
+import com.zuzu.redis.coba_sendiri.coba_redis_sendiri.dto.response.ResponseUserDTO;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.zuzu.redis.coba_sendiri.coba_redis_sendiri.dto;
+package com.zuzu.redis.coba_sendiri.coba_redis_sendiri.dto.response;
 
 import lombok.Data;
 

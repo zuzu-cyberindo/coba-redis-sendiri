@@ -4,5 +4,6 @@ import com.google.gson.Gson;
 
 public class Constant {
 
-    public static final Gson gson =new Gson();
+    public static final Gson gson = new Gson();
+    public static final String API = "/api";
 }

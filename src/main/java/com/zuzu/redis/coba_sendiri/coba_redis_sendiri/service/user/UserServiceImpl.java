@@ -1,24 +1,21 @@
-package com.zuzu.redis.coba_sendiri.coba_redis_sendiri.service;
+package com.zuzu.redis.coba_sendiri.coba_redis_sendiri.service.user;
 
-import com.google.gson.Gson;
 import com.zuzu.redis.coba_sendiri.coba_redis_sendiri.bean.RedisConnectionChecker;
-import com.zuzu.redis.coba_sendiri.coba_redis_sendiri.dto.RequestUserDTO;
-import com.zuzu.redis.coba_sendiri.coba_redis_sendiri.dto.ResponseUserDTO;
+import com.zuzu.redis.coba_sendiri.coba_redis_sendiri.dto.request.RequestUserDTO;
+import com.zuzu.redis.coba_sendiri.coba_redis_sendiri.dto.response.ResponseUserDTO;
 import com.zuzu.redis.coba_sendiri.coba_redis_sendiri.entity.User;
 import com.zuzu.redis.coba_sendiri.coba_redis_sendiri.exception.DataErrorException;
 import com.zuzu.redis.coba_sendiri.coba_redis_sendiri.repository.UserRepository;
+import com.zuzu.redis.coba_sendiri.coba_redis_sendiri.service.redis.RedisManagementService;
 import com.zuzu.redis.coba_sendiri.coba_redis_sendiri.util.Constant;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.redis.RedisConnectionFailureException;
-import org.springframework.data.redis.core.BoundValueOperations;
 import org.springframework.data.redis.core.BoundZSetOperations;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
-import org.springframework.util.StringUtils;
 
 import java.math.BigDecimal;
 import java.util.Date;

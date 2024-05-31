@@ -1,10 +1,11 @@
 package com.zuzu.redis.coba_sendiri.coba_redis_sendiri.controller;
 
 import com.zuzu.redis.coba_sendiri.coba_redis_sendiri.dto.BasicResponse;
-import com.zuzu.redis.coba_sendiri.coba_redis_sendiri.dto.RequestUserDTO;
-import com.zuzu.redis.coba_sendiri.coba_redis_sendiri.dto.ResponseUserDTO;
+import com.zuzu.redis.coba_sendiri.coba_redis_sendiri.dto.request.RequestUserDTO;
+import com.zuzu.redis.coba_sendiri.coba_redis_sendiri.dto.response.ResponseUserDTO;
 import com.zuzu.redis.coba_sendiri.coba_redis_sendiri.exception.CaughtException;
-import com.zuzu.redis.coba_sendiri.coba_redis_sendiri.service.UserService;
+import com.zuzu.redis.coba_sendiri.coba_redis_sendiri.service.user.UserService;
+import com.zuzu.redis.coba_sendiri.coba_redis_sendiri.util.Constant;
 import jakarta.validation.Valid;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -23,7 +24,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/api")
+@RequestMapping(value = Constant.API)
 @Validated
 public class UserController {
 
@@ -133,5 +134,4 @@ public class UserController {
         }
         return ResponseEntity.status(status).body(response);
     }
-
 }

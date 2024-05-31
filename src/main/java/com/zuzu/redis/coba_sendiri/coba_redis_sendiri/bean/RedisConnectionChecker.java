@@ -1,6 +1,6 @@
 package com.zuzu.redis.coba_sendiri.coba_redis_sendiri.bean;
 
-import com.zuzu.redis.coba_sendiri.coba_redis_sendiri.service.RedisManagementService;
+import com.zuzu.redis.coba_sendiri.coba_redis_sendiri.service.redis.RedisManagementService;
 import jakarta.annotation.PostConstruct;
 import lombok.Data;
 import org.apache.logging.log4j.LogManager;
@@ -24,6 +24,4 @@ public class RedisConnectionChecker {
         this.isConnectionClear = redisManagementService.checkConnection();
         logger.info(String.format("Connection to redis is %s", this.isConnectionClear ? "available" : "not available"));
     }
-
-
 }

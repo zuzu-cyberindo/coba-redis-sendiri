@@ -1,4 +1,4 @@
-package com.zuzu.redis.coba_sendiri.coba_redis_sendiri.service;
+package com.zuzu.redis.coba_sendiri.coba_redis_sendiri.service.redis;
 
 public interface RedisManagementService {
     boolean activateRedis();
